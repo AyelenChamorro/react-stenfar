@@ -1,0 +1,25 @@
+.bg-navbar-filter{
+  height: 154px;
+  width: 100%;
+  background-color: #f7f7f7;
+ .m-auto{
+ height:100%;
+   margin: auto;
+   max-width: 1000px;
+  .row {
+ height: 100%;
+    p {
+      text-align: center;
+      padding-top: 6px;
+    }
+    
+    .resmas, .computacion, .accesorios, .impresoras, .almacenamiento
+     {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+  }
+ }
+}

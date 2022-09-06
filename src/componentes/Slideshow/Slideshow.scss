@@ -1,0 +1,26 @@
+#slidehows {
+  .bg-container {
+    position: absolute;
+    margin-top: -13rem;
+    margin-left: 150px;
+    @media (min-width: 1600px) {
+      margin-left: 180px;
+    }
+    .hacete-cliente {
+      color: #0081e6;
+    }
+    .contacto,
+    p {
+      color: white;
+    }
+    .email {
+      font-size: 24px;
+    }
+  }
+  .carousel-inner {
+    .carousel-item {
+      
+      height: 247px;
+    }
+  }
+}
