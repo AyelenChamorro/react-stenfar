@@ -15,7 +15,7 @@ export const NavbarFilter = () => {
             <p>Resmas</p>
           </div>
 
-          {/* Aca bb tenes codigo repetitvo, Te conviene hacer un componente */}
+         
 
           <div className="computacion col">
             <img src={itemComputacion} alt="" />

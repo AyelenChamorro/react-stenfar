@@ -1,23 +1,23 @@
 import React from 'react'
-import { dataItemVenta } from '../../../API/db'
+
 import "./TarjetaItemVenta.scss"
 
-export const TarjetaItemVenta = (tarjeaItem) => {
-  const { imagenItem, modelItem, nombreItem, stockItem, precioItem } = tarjeaItem
+export const TarjetaItemVenta = (tarjetaItem) => {
+  const { imagenItem, modelItem, nombreItem, stockItem, precioItem } = tarjetaItem
   return (
     <div className="tarjeta-item-venta col-2 col-xxl-3  d-flex justify-content-start ">
       <div className="bg-image  ">
         <img src={imagenItem} alt="" />
       </div>
 
-      <div className='container-item'>
+      <div className='container-item '>
 
-        <h4 className='text-start'>{modelItem}</h4>
-        <h4 className='text-start'>{nombreItem}</h4>
-        <p>Stock:{stockItem} Unidades</p>
-        <div className="d-flex">
-          <h3>{precioItem}</h3>
-          <p>IVA 21%</p>
+        <h3 className='model-item'>{modelItem}</h3>
+        <h4 className='nombre-item'>{nombreItem}</h4>
+        <p className='stock-item'>Stock:{stockItem} Unidades</p>
+        <div className="d-flex justify-content-evenly">
+          <h3 className='precio-item'>${precioItem}</h3>
+          <p className='iva'>IVA 21%</p>
         </div>
         <div className="buttons-counter-agregar d-flex">
           <div className="item-counter d-flex justify-content-center align-items-center">
@@ -27,7 +27,7 @@ export const TarjetaItemVenta = (tarjeaItem) => {
           </div>
 
           <button className="button-agregar" type="">
-            Agregar +
+            AGREGAR +
           </button>
         </div>
       </div>
