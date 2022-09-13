@@ -33,3 +33,26 @@ export const dataItemVenta = [
     precioItem: 3100,
   }
 ];
+export const dataItemVenta2 = [
+  {
+    imagenItem: imageauricular,
+    modelItem: "SAMMLT-P108A",
+    nombreItem: "SAMSUNG TONER MAGENTA",
+    stockItem: 10,
+    precioItem: 3100,
+  },
+  {
+    imagenItem: imagecartucho,
+    modelItem: "SAMMLT-P108A",
+    nombreItem: "CARTUCHO HP 662",
+    stockItem: 10,
+    precioItem: 680,
+  },
+  {
+    imagenItem: imageimpresora,
+    modelItem: "SAMMLT-P108A",
+    nombreItem: "HP IMPRESORA MAGENTA (1.000 PÁG.)",
+    stockItem: 10,
+    precioItem: 15100,
+  }
+];

@@ -9,7 +9,7 @@ header {
     border-color: transparent;
     padding-left: 1.5rem;
     font-family: SpaceGrotesk-Regular;
-    margin-left: -74px;
+ 
     margin-top: 9px;
 
     &::placeholder {
@@ -21,27 +21,24 @@ header {
     position: relative;
     left: -2rem;
   }
-  
-    .list-Header {
-      li {
-        font-size: 16px;
-        margin-top: 17px;
-        margin-left: 39px;
-        list-style:none;
-        a{
-            text-decoration: none;
-            color: black;
-        }
-      }
-      margin-left: -158px;
+
+  .list-Header {
+    button {
+      font-size: 16px;
+      border: none;
+
       font-family: SpaceGrotesk-Medium;
+      a{
+        text-decoration: none;
+        color: #000000;
+      }
     }
-  
-  .icono-Usuario{
-    margin-left: -82px;
   }
-  .iconoCarrito{
-    margin-left: 12px;
+
+ 
+  .iconoCarrito {
+   margin-left: 10px;
   }
 }
+
 

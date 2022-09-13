@@ -8,7 +8,7 @@ export const Slideshow = () => {
   return (
     <div id="slidehows" className="carousel slide" data-bs-ride="carousel">
     
-      <div class="carousel-indicators">
+      <div className="carousel-indicators">
         <button
           type="button"
           data-bs-target="#slidehows"
