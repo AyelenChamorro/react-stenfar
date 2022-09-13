@@ -15,7 +15,7 @@ export const Header = () => {
           {' '}
           <Logo className="imagen-Logo " />
         </Link>
-        ;
+        
         <div className="d-flex">
           <input
             className="input-Header "
