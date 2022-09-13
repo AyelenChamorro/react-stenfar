@@ -1,0 +1,21 @@
+.bg-azul {
+    background-color: #03267f;
+
+    height: 300px;
+    margin-top: 56px;
+    .servicios {
+        h1 {
+            color: #ffffff;
+            font-size: 18px;
+            font-family: SpaceGrotesk-Bold;
+            text-align: center;
+            padding-top: 64px;
+        }
+    }
+
+    .items {
+        width: 100%;
+        margin-top: 50px;
+        justify-content: space-evenly;
+    }
+}

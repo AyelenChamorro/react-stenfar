@@ -7,6 +7,7 @@ import { Navbar } from "../../componentes/Navbar/Navbar";
 import { NavbarFilter } from "../../componentes/NavbarFilter/NavbarFilter";
 import Novedades from "../../componentes/Novedades/Novedades";
 import { Slideshow } from "../../componentes/Slideshow/Slideshow";
+import {Footer} from "../../componentes/Footer/Footer";
 
 export const Home = () => {
   return (
@@ -19,6 +20,7 @@ export const Home = () => {
       <ItemVenta />
       <Novedades/>
      <ItemMasVendido/>
+     <Footer/>
     </div>
   );
 };

@@ -1,0 +1,85 @@
+body {
+    .contenedor-banner {
+        margin-top: 60px;
+      
+        .seccion-filter {
+            width: 258px;
+            height: 743px;
+            .inicio-seccion-filter {
+                font-family: SpaceGrotesk-Bold;
+                font-size: 16px;
+            }
+            .cartuchos-y-torners {
+                border-bottom: black 1px solid;
+                .cartuchos {
+                    color: #00477d;
+                    font-family: SpaceGrotesk-Bold;
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
+            }
+            .precio-filter {
+                margin-top: 23px;
+                border-bottom: black 1px solid;
+                .precio {
+                    color: #00477d;
+                    font-family: SpaceGrotesk-Bold;
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
+            }
+            .boton-desde-hasta{
+                color: rgba(128, 128, 128, 0.473);
+                width: 80px;
+                height: 30px;
+                border-radius: 12.5px;
+                border: solid 1px #007EE9;
+            }
+            .por-stock-filter{
+                 margin-top: 23px;
+                border-bottom: black 1px solid;
+                .por-stock{
+                    color: #00477d;
+                    font-family: SpaceGrotesk-Bold;
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
+            }
+            .envio-de-muestras{
+                border-top: solid 1px #b8b7b7;
+                padding-top: 25px;
+            }
+            .boton-aplicar{
+                width: 123px;
+                height: 30px;
+                border-radius: 15px;
+                color: white;
+                background-color: #0072D8;
+                border-color: #0072D8;
+                margin-top: 23px;
+            }
+        }
+      
+    }
+      .contador-filter {
+            width: 39px;
+            height: 20px;
+            font-family: SpaceGrotesk-Regular;
+            font-size: 12.6px;
+            background-color: #7abaf18a;
+            color: #007ee9;
+            margin-top: 10px;
+            border-radius: 9.9px;
+            padding-left: 10px;
+        }
+        .border-items {
+            height: 41px;
+            border-bottom: 1px solid #b8b7b7;
+            margin-top: 10px;
+        }
+        .mas-de{
+            font-size: 14px;
+            font-family: SpaceGrotesk-Regular;
+           
+        }
+}

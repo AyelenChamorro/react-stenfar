@@ -2,6 +2,7 @@ import React from 'react'
 import "./TarjetaMasVendido.scss"
 
 
+
 export const TarjetaMasVendido = (tarjetaItem) => {
     const { imagenItem, modelItem, nombreItem, stockItem, precioItem } = tarjetaItem
     return (

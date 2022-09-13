@@ -1,13 +1,12 @@
-import iconSerch from "../../imagenes/icon-search.svg";
-import { Logo } from "../Logo/Logo";
-import iconoUsuario from "../../imagenes/icono-usuario.svg";
-import iconoCarrito from "../../imagenes/icono-carrito.svg";
+import React from 'react';
+import iconSerch from '../../../imagenes/icon-search.svg';
+import { Logo } from '../../Logo/Logo';
+import iconoUsuario from '../../../imagenes/icono-usuario.svg';
+import iconoCarrito from '../../../imagenes/icono-carrito.svg';
+import { Link } from 'react-router-dom';
+import './OnClickProductos.scss';
 
-import "./Header.scss";
-import { Link } from "react-router-dom";
-
-
-export const Header = () => {
+export const OnClickProductos = () => {
   return (
     <header className="header d-flex justify-content-between align-items-center ">
       <div className="container d-flex justify-content-between align-items-center">
@@ -15,7 +14,7 @@ export const Header = () => {
           {' '}
           <Logo className="imagen-Logo " />
         </Link>
-        ;
+
         <div className="d-flex">
           <input
             className="input-Header "
@@ -27,13 +26,12 @@ export const Header = () => {
           <img className="icono-Input" src={iconSerch} alt="" />
         </div>
         <div className="list-Header d-flex">
-          <button className="b-productos">
+          <button className="b-productos ">
             <Link to={'/productos'}>Productos</Link>
           </button>
           <button>
             <Link to={'/sobrenosotros'}>Sobre Nosotros</Link>
           </button>
-
           <button>Novedades</button>
           <button>Contacto</button>
         </div>
@@ -45,3 +43,4 @@ export const Header = () => {
     </header>
   );
 };
+export default OnClickProductos;
