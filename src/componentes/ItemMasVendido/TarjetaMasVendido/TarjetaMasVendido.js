@@ -1,20 +1,15 @@
 import React, {useState, useEffect} from 'react'
+import useHooks from '../../useHooks/useHooks'
 import "./TarjetaMasVendido.scss"
 
 
 
 export const TarjetaMasVendido = (tarjetaItem) => {
+
+  const {handleClickMenos, handleClickMas, contador} = useHooks()
     const { imagenItem, modelItem, nombreItem, stockItem, precioItem } = tarjetaItem
-    const [contador, setContador] = useState(0);
-    const handleClickMas = () => {
-     
-      setContador (contador + 1);
-    };
-   
-    const handleClickMenos = () => {
-     
-      setContador (contador >= 1 && contador - 1);
-    };
+
+
     return (
       <div className="tarjeta-item-venta col-2 col-xxl-3  d-flex justify-content-start ">
         <div className="bg-image  ">

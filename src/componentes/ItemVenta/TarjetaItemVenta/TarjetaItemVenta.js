@@ -1,22 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { ReactDOM } from "react";
+import useHooks from "../../useHooks/useHooks";
 import "./TarjetaItemVenta.scss";
-/* import FriendListItemfrom from '../../../componentes/Hooks/Hooks.js'; */
 
 export const TarjetaItemVenta = (tarjetaItem) => {
+  const { handleClickMenos, handleClickMas, contador } = useHooks();
   const { imagenItem, modelItem, nombreItem, stockItem, precioItem } =
     tarjetaItem;
-  const [contador, setContador] = useState([0]);
-  const handleClickMas = () => {
-   
-    setContador (contador + 1);
-  };
- 
-  const handleClickMenos = () => {
-   
-    setContador (contador >= 1  && contador - 1);
-  };
-
 
   return (
     <div className="tarjeta-item-venta col-2 col-xxl-3  d-flex justify-content-start ">
@@ -34,9 +22,13 @@ export const TarjetaItemVenta = (tarjetaItem) => {
         </div>
         <div className="buttons-counter-agregar d-flex">
           <div className="item-counter-seccion d-flex justify-content-center align-items-center">
-            <button className= "item-counter" onClick={handleClickMenos}>-</button>
+            <button className="item-counter" onClick={handleClickMenos}>
+              -
+            </button>
             <p className="mt-3 ">{contador}</p>
-            <button className= "item-counter" onClick={handleClickMas}>+</button>
+            <button className="item-counter" onClick={handleClickMas}>
+              +
+            </button>
           </div>
           <button className="button-agregar" type="">
             AGREGAR +
