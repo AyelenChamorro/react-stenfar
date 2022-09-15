@@ -1,10 +1,18 @@
-import React from 'react';
-import { dataItemVenta2 } from '../../API/db';
-import { TarjetaBanner } from '../Banner/TarjetaBanner/TarjetaBanner';
-import './Banner.scss';
+import React, {useState, useEffect} from "react";
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import { faSquare} from '@fortawesome/free-regular-svg-icons';
+import { dataItemVenta2 } from "../../API/db";
+import { TarjetaBanner } from "../Banner/TarjetaBanner/TarjetaBanner";
+import  Check from "../../componentes/Banner/Checkbox/Checkbox.js";
+import Switch from "../../componentes/Banner/CheckSwitch/CheckSwich.js"
+import "./Banner.scss";
 
 export const Banner = () => {
   console.log(dataItemVenta2);
+
+  
   return (
     <div className="container">
       <div className="contenedor-banner row">
@@ -32,6 +40,10 @@ export const Banner = () => {
           </div>
           <div className="precio-filter d-flex  justify-content-between">
             <h4 className="precio">Precio</h4>
+    
+           <FontAwesomeIcon icon={faAngleUp} />
+
+           
           </div>
           <div className="d-flex mt-4 justify-content-around">
             <p>Desde</p>
@@ -42,31 +54,36 @@ export const Banner = () => {
             <button className="boton-desde-hasta">950</button>
             <button className="boton-desde-hasta">34079</button>
           </div>
-          <div className="por-stock-filter d-flex mt-4 ">
+          <div className="por-stock-filter d-flex mt-4 justify-content-between">
             <h4 className="por-stock">Por stok</h4>
+            <FontAwesomeIcon icon={faAngleUp} />
+         
+             
+            
           </div>
           <div className="d-flex mt-4 justify-content-between ">
             <p className="mas-de">Más de 50</p>
-            <p>Hasta</p>
+            <Check/>
+            
           </div>
           <div className="d-flex justify-content-between">
             <p className="mas-de">Más de 85</p>
-            <p>Hasta</p>
+            <Check/>
           </div>
           <div className="d-flex justify-content-between ">
             <p className="mas-de">Más de 200</p>
-            <p>Hasta</p>
+            <Check/>
           </div>
           <div className="envio-de-muestras d-flex justify-content-between">
             <p>Envío de muestras</p>
-            <button>+</button>
+            <Switch/>
           </div>
           <div>
             <button className="boton-aplicar">Aplicar</button>
           </div>
           <div className="mt-2">
             <p>
-              {' '}
+              {" "}
               <a href="">Limpiar filtros</a>
             </p>
           </div>

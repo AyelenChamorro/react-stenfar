@@ -1,10 +1,20 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import "./TarjetaMasVendido.scss"
 
 
 
 export const TarjetaMasVendido = (tarjetaItem) => {
     const { imagenItem, modelItem, nombreItem, stockItem, precioItem } = tarjetaItem
+    const [contador, setContador] = useState(0);
+    const handleClickMas = () => {
+     
+      setContador (contador + 1);
+    };
+   
+    const handleClickMenos = () => {
+     
+      setContador (contador >= 1 && contador - 1);
+    };
     return (
       <div className="tarjeta-item-venta col-2 col-xxl-3  d-flex justify-content-start ">
         <div className="bg-image  ">
@@ -22,9 +32,9 @@ export const TarjetaMasVendido = (tarjetaItem) => {
           </div>
           <div className="buttons-counter-agregar d-flex">
             <div className="item-counter d-flex justify-content-center align-items-center">
-              <div>-</div>
-              <div>0</div>
-              <div>+</div>
+            <button className= "item-counter" onClick={handleClickMenos}>-</button>
+            <p className="mt-3 p-1">{contador}</p>
+            <button className= "item-counter" onClick={handleClickMas}>+</button>
             </div>
   
             <button className="button-agregar" type="">
