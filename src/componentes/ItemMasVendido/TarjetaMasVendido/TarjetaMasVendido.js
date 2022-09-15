@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+
 import useHooks from '../../useHooks/useHooks'
 import "./TarjetaMasVendido.scss"
 
